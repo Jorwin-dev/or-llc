@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div className='hero container'>
       <div className='hero-text'>
-        <h1>No job is too small!</h1>
+        <h1>No job is too small</h1>
         <p>We offer all kinds of Professional Services. We take pride in customer satisfaction, and
           will go the extra step to leave a smile on every customers face. With affordable pricing we 
-          offer services for Landscaping, Masonry, Fences, an much more!</p>
+          offer services for Landscaping, Masonry, Fences, and much more!</p>
           <button className='btn'>Explore more <img src={dark_arrow} alt='arrow'/></button>
       </div>
     </div>
