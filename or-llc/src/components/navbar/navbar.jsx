@@ -1,11 +1,21 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
+import { useEffect, useState } from 'react'
 import './navbar.css'
-import logo from '/Users/Jorwi/or-llc/or-llc/src/assets/O&R_Logo_no_number.png'
+import logo from '../../assets/O&R_Logo_no_number.png'
 
 const navbar = () => {
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [sticky, setSticky] = useState(false);
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+          window.scrollY > 50 ? setSticky(true) : setSticky(false)
+        })
+    }, [])
+
   return (
-    <nav className='container'>
+    <nav className={`container ${sticky? 'dark-nav' : ''}`}>
       <img src={logo} alt='logo' className='logo'/>
       <ul>
         <li>Home</li>
