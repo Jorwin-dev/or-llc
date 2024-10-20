@@ -45,3 +45,9 @@
     opacity: 1;
     padding-top: 0;
 }
+
+.masonry-img {
+    object-fit: cover;
+    height: auto;
+    aspect-ratio: 1.5/1;
+}

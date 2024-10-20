@@ -1,0 +1,29 @@
+.showcase {
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 23%;
+    border-radius: 10px;
+}
+
+.nat-img {
+height: auto;
+object-fit: cover;
+aspect-ratio: 1.5/2;
+}
+
+.fall-img {
+height: auto;
+object-fit: cover;
+aspect-ratio: 1.5/2;
+}
