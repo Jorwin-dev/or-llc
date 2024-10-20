@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from './components/navbar/navbar'
 import Hero from './components/Hero/Hero'
 import Services from './components/Services/Services'
+import Title from './components/Title/Title'
 
 const App = () => {
   return (
@@ -10,8 +11,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <div className="container">
+        <Title subTitle='Our PROGRAM' title='What We Offer'/>
+        <Services/>
       </div>
-      <Services/>
     </div>
   )
 }
